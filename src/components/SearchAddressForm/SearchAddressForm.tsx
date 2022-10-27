@@ -4,8 +4,8 @@ import cn from 'classnames';
 import { useField } from '@/hooks';
 import { routing } from '@/consts';
 import { CommonProps } from '@/interfaces';
-import { Input } from '@/components/Input';
-import { Button } from '@/components/Button';
+import { Input } from '@/ui/Input';
+import { Button } from '@/ui/Button';
 
 import styles from './SearchAddressForm.module.css';
 

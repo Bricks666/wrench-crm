@@ -20,6 +20,10 @@ export const AddressList: React.FC<AddressListProps> = React.memo(function Addre
 		return <>Loading...</>;
 	}
 
+	if (!addresses?.length) {
+		return null;
+	}
+
 	return (
 		<section className={cn(styles.addressList, className)}>
 			<h2 className={styles.title}>Адреса</h2>

@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { DeviceInfoProvider } from './contexts/DeviceInfoContext';
 import { App } from './app';
 
 import './styles/styles.css';
@@ -12,9 +13,13 @@ const root = ReactDOM.createRoot(container);
 const client = new QueryClient();
 
 root.render(
-	<BrowserRouter>
-		<QueryClientProvider client={client}>
-			<App />
-		</QueryClientProvider>
-	</BrowserRouter>
+	<React.StrictMode>
+		<BrowserRouter>
+			<DeviceInfoProvider>
+				<QueryClientProvider client={client}>
+					<App />
+				</QueryClientProvider>
+			</DeviceInfoProvider>
+		</BrowserRouter>
+	</React.StrictMode>
 );

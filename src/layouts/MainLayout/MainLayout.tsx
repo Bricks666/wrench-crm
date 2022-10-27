@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { CommonProps } from '@/interfaces';
 import { Header } from '@/components/Header';
 import { Navigation } from '@/components/Navigation';
-import { Container } from '@/components/Container';
+import { Container } from '@/ui/Container';
 
 import styles from './MainLayout.module.css';
 

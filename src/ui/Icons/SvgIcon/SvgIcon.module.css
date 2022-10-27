@@ -1,0 +1,8 @@
+.svgIcon {
+	display: inline-block;
+
+	width: 2em;
+
+	fill: currentColor;
+	stroke: currentColor;
+}

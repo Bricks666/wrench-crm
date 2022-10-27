@@ -1,9 +1,24 @@
 .address {
 	display: grid;
-	grid-template-rows: max-content 1fr;
+	grid-template-rows: max-content max-content 1fr;
 	gap: 32px;
 
 	width: 100%;
 
 	overflow-y: scroll;
+}
+
+.titleContainer {
+	display: grid;
+	gap: 16px;
+}
+
+.title {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 20px;
+	font-weight: 500;
 }

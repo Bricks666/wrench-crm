@@ -1,0 +1,14 @@
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.icon {
+	width: 48px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 700;
+}
