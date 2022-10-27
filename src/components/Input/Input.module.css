@@ -1,0 +1,22 @@
+.input {
+	padding: 20px 24px;
+
+	font-size: 20px;
+	font-weight: 500;
+
+	border: 3px solid var(--primary-color);
+	border-radius: 10px;
+
+	transition: all 200ms ease-in-out;
+}
+
+.input::placeholder {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--third-color-100);
+}
+
+.input:hover,
+.input:focus-visible {
+	box-shadow: 0px 2px 8px var(--shadow-color);
+}

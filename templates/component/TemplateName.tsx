@@ -1,6 +1,6 @@
 import * as React from 'react';
 import cn from 'classnames';
-import { CommonProps } from '@/interfaces/common';
+import { CommonProps } from '@/interfaces';
 
 import styles from './TemplateName.module.css';
 

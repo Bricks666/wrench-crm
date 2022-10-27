@@ -1,0 +1,12 @@
+.button {
+	padding: 20px 40px;
+
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.2em;
+	color: var(--contract-color);
+
+	background-color: var(--primary-color);
+
+	border-radius: 10px;
+}

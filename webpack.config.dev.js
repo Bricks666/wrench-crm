@@ -15,9 +15,6 @@ const getConfig = (...args) => {
 			open: true,
 			historyApiFallback: true,
 			compress: true,
-			server: 'http',
-			watchFiles: ['./src/**/*.*'],
-			hot: true,
 		},
 		plugins: [new HotModuleReplacementPlugin()],
 	};

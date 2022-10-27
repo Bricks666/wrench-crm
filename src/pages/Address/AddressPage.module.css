@@ -1,0 +1,9 @@
+.address {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	gap: 32px;
+
+	width: 100%;
+
+	overflow-y: scroll;
+}

@@ -16,8 +16,6 @@ const getConfig = () => {
 		output: {
 			path: paths.build,
 			filename: 'static/js/[name].[contenthash:8].js',
-			publicPath: './',
-			pathinfo: true,
 			chunkFilename: 'static/js/[name].[contenthash:8].chunk.js',
 			assetModuleFilename: 'static/media/[name].[hash][ext]',
 			clean: true,
@@ -34,22 +32,9 @@ const getConfig = () => {
 		module: {
 			rules: [
 				{
-					test: /\.js$/,
+					test: /\.tsx?$/,
+					use: 'babel-loader',
 					exclude: /node_modules/,
-					use: ['babel-loader'],
-				},
-				{
-					test: /\.ts(x?)$/,
-					exclude: /node_modules/,
-					use: [
-						'babel-loader',
-						{
-							loader: 'ts-loader',
-							options: {
-								configFile: tsconfigFile,
-							},
-						},
-					],
 				},
 				{
 					test: /\.css$/,
@@ -73,6 +58,8 @@ const getConfig = () => {
 		plugins: [
 			new HtmlWebpackPlugin({
 				template: path.join(paths.public, 'index.html'),
+				inject: 'head',
+				filename: 'index.html',
 				minify: true,
 			}),
 			new MiniCssExtractPlugin(),

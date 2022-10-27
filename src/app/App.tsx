@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CommonProps } from '@/interfaces/common';
+import { CommonProps } from '@/interfaces';
 import { AppRoutes } from '@/components/AppRoutes';
 
 export interface AppProps extends CommonProps {}

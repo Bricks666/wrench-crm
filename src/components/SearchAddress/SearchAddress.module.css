@@ -1,0 +1,19 @@
+.searchAddress {
+	display: grid;
+	gap: 24px;
+}
+
+.titleContainer {
+	display: grid;
+	gap: 16px;
+}
+
+.title {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 20px;
+	font-weight: 500;
+}
